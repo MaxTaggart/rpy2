@@ -102,7 +102,7 @@ def _str_populate_r_vector(iterable, r_vector,
         if (
                 v is None
                 or
-                v is pandas.NA
+                pandas.isna(v)
                 or
                 (isinstance(v, float) and math.isnan(v))
         ):
